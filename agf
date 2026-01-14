@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROYO GAME FARM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: #000; color: #FFD700; line-height: 1.6; }
+
+        header { background-color: #111; color: #FFD700; padding: 20px 0; text-align: center; border-bottom: 2px solid #FFD700; }
+        header h1 { font-size: 2.5em; letter-spacing: 3px; }
+
+        nav { background-color: #111; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #FFD700; }
+        nav a { color: #FFD700; text-decoration: none; padding: 15px 20px; display: block; transition: 0.3s; }
+        nav a:hover { background-color: #FFD700; color: #000; border-radius: 5px; }
+
+        .hero { 
+            background-size: cover; 
+            background-position: center; 
+            height: 450px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: #FFD700; 
+            text-shadow: 2px 2px 8px #000;
+        }
+        .hero h2 { font-size: 3em; background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px; }
+
+        .content { padding: 40px 20px; max-width: 1200px; margin: auto; }
+        .content h2 { color: #FFD700; margin-bottom: 20px; }
+
+        .chicken-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .chicken-card { background-color: #1a1a1a; border-radius: 10px; box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+        .chicken-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(255, 215, 0, 0.6); }
+        .chicken-card img { width: 100%; height: 200px; object-fit: cover; }
+        .chicken-card h3 { padding: 15px; font-size: 1.5em; color: #FFD700; }
+        .chicken-card p { padding: 0 15px 15px 15px; color: #f0e68c; }
+
+        footer { background-color: #111; color: #FFD700; text-align: center; padding: 20px 0; margin-top: 40px; border-top: 2px solid #FFD700; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em; }
+            .hero h2 { font-size: 2em; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ARROYO GAME FARM</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#chickens">Live Chickens</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home" style="background-image: url('f60719f5-8555-490e-8d3d-b64986dc254d.png');">
+        <h2>Welcome to ARROYO GAME FARM</h2>
+    </section>
+
+    <section class="content" id="chickens">
+        <h2>Our Live Chickens</h2>
+        <div class="chicken-grid">
+            <div class="chicken-card">
+                <img src="https://images.unsplash.com/photo-1605123588825-6d36eafdb317?auto=format&fit=crop&w=800&q=80" alt="Chicken 1">
+                <h3>Red Junglefowl</h3>
+                <p>Healthy and active, perfect for your farm.</p>
+            </div>
+            <div class="chicken-card">
+                <img src="https://images.unsplash.com/photo-1583337130417-2f3c7e66d0f0?auto=format&fit=crop&w=800&q=80" alt="Chicken 2">
+                <h3>Brahma</h3>
+                <p>Gentle giants with fluffy feathers.</p>
+            </div>
+            <div class="chicken-card">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829e2e1a?auto=format&fit=crop&w=800&q=80" alt="Chicken 3">
+                <h3>Leghorn</h3>
+                <p>Excellent layers, strong and resilient.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="about">
+        <h2>About ARROYO GAME FARM</h2>
+        <p>At Arroyo Game Farm, we are passionate about raising healthy, active chickens. We prioritize animal welfare, quality feed, and sustainable farming practices to bring you the best live chickens for your farm or personal needs.</p>
+    </section>
+
+    <section class="content" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@arroyogamefarm.com</p>
+        <p>Phone: +1 555-123-4567</p>
+        <p>Location: 123 Farm Road, Your City</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ARROYO GAME FARM. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
